@@ -1,14 +1,14 @@
 # CryptoTracker
 
-This personal project looks to address the limitations of a popular cryptocurrency tracker so portfolios can be valued at any time.
+This personal project looks to address the limitations of popular cryptocurrency trackes so portfolios can be valued at any time.
 
-Currently, I have only included Binance, one of the world's most popular crypto exchanges where many coins are traded every day. The greatest limitation I have found is once you withdraw your coins to sit in a cold storage wallet i.e. they are no longer on the exchange, it is impossible to track the value of your portfolio. Even on the exchange app itself, you only know the current value of your portfolio, and the workaround is to export your transaction history into 3 party apps to find profit/loss. This still doesn't allow you to see your cold storage amount.
+Currently, I have only included Binance, one of the world's most popular crypto exchanges where many coins are traded every day. The greatest limitation of these apps is that once you withdraw your coins to sit in a cold storage wallet i.e. they are no longer on the exchange, it is impossible to track the value of your portfolio. Even on the exchange app itself, you only know the current value of your portfolio, and the workaround is to export your transaction history into 3 party apps to find profit/loss. This still doesn't allow you to see your cold storage amount.
 
 This project works by using the exisiting exports to create a mass dataframe, whereby multiple exports can be fed in and give you a breakdown of your portfolio. It use's Binance's API to see real-time price movements. Even if part of your coins are in a cold wallet, this won't affect the valuation as they will have already been saved into the master table.
 
 **Next steps & limitations**:
 
-My next action is to create plots that track your valuation over time. Seeing the entire portfolio, and also each coin, is feasible.
+My next action is to create plots that track your valuation over time. Seeing the entire portfolio, and also each coin value is feasible through the API.
 
 Currently, the import of the transaction history 'Export Transaction History {1}' is hard coded, whereby an easily copy-and-paste line subsitituing the number of the file is required. I think this could be further parameterised by using a 'for loop', but it's not been added yet.
 
